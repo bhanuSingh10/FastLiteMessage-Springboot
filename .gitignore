@@ -1,0 +1,214 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# =====================================================
+# ENVIRONMENT FILES & CREDENTIALS (MOST IMPORTANT!)
+# =====================================================
+.env
+.env.local
+.env.development
+.env.production
+*.env
+**/.env
+**/application-prod.properties
+**/application-dev.properties
+
+# =====================================================
+# FRONTEND (React/Next.js)
+# =====================================================
+# dependencies
+frontend/node_modules/
+node_modules/
+*/node_modules/
+
+# next.js
+frontend/.next/
+/.next/
+/out/
+
+# production builds
+frontend/build/
+frontend/dist/
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# =====================================================
+# BACKEND (Java/Spring Boot)
+# =====================================================
+# Maven
+backend/target/
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/buildNumber.properties
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (if used)
+backend/.gradle
+backend/build/
+backend/!gradle/wrapper/gradle-wrapper.jar
+backend/!**/src/main/**/build/
+backend/!**/src/test/**/build/
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Spring Boot
+backend/application-*.properties
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-dev.properties
+
+# =====================================================
+# IDE FILES
+# =====================================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+backend/.idea/
+frontend/.idea/
+
+# Visual Studio Code
+.vscode/
+backend/.vscode/
+frontend/.vscode/
+
+# Eclipse
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =====================================================
+# OS FILES
+# =====================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# =====================================================
+# LOGS & TEMPORARY FILES
+# =====================================================
+*.log
+logs/
+backend/logs/
+frontend/logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =====================================================
+# DATABASE & UPLOADS
+# =====================================================
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Upload directories
+uploads/
+backend/uploads/
+frontend/uploads/
+public/uploads/
+
+# =====================================================
+# TESTING & COVERAGE
+# =====================================================
+# Coverage directory used by tools like istanbul
+coverage/
+frontend/coverage/
+backend/coverage/
+
+# Test results
+test-results/
+*.lcov
+
+# =====================================================
+# DEPLOYMENT & DOCKER
+# =====================================================
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Deployment files
+deployment/
+.deployment
+
+# =====================================================
+# MISCELLANEOUS
+# =====================================================
+# Backup files
+*.backup
+*.bak
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# Package managers lock files (optional - you might want to include these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
